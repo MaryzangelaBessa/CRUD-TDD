@@ -12,15 +12,15 @@ public class SysMary {
 	public static void main(String[] args) throws Exception {
 		boolean run = true;
 		scanner = new Scanner(System.in);
-		ControllerDAOUsuario contDAOUser = new ControllerDAOUsuario();
+		ControllerDAOUsuario contDAOUser = ControllerDAOUsuario.getInstace();
 		Validacoes validacao = new Validacoes();
 		int id = -1;
-		contDAOUser.addUsuario("UsuarioTeste1", "RuaTeste1", "BairroTeste1", "CidadeTeste1", "EstadoTeste1", 123, "88996066716", 150.5);
-		contDAOUser.addUsuario("UsuarioTeste2", "RuaTeste2", "BairroTeste2", "CidadeTeste2", "EstadoTeste2", 123, "88996066716", 1252.1);
-		
-		contDAOUser.addUsuario("UsuarioTeste", "RuaTeste", "BairroTeste", "CidadeTeste", "EstadoTeste", 123, "88996066716", 1252.2);
-		contDAOUser.addUsuario("nome", "rua", "bairro", "cidade", "estado", 123, "88996066716", 1252.2);
-		contDAOUser.addUsuario("NOME", "RUA", "BAIRRO", "CIDADE", "ESTADO", 123, "88996066716", 1252.2);
+//		contDAOUser.addUsuario("UsuarioTeste1", "RuaTeste1", "BairroTeste1", "CidadeTeste1", "EstadoTeste1", 123, "88996066716", 150.5);
+//		contDAOUser.addUsuario("UsuarioTeste2", "RuaTeste2", "BairroTeste2", "CidadeTeste2", "EstadoTeste2", 123, "88996066716", 1252.1);
+//		
+//		contDAOUser.addUsuario("UsuarioTeste", "RuaTeste", "BairroTeste", "CidadeTeste", "EstadoTeste", 123, "88996066716", 1252.2);
+//		contDAOUser.addUsuario("nome", "rua", "bairro", "cidade", "estado", 123, "88996066716", 1252.2);
+//		contDAOUser.addUsuario("NOME", "RUA", "BAIRRO", "CIDADE", "ESTADO", 123, "88996066716", 1252.2);
 		while (run) {
 			System.out.println("----------USUÁRIOS----------");
 			System.out.println("Escolha a ação:");

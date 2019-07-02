@@ -8,17 +8,25 @@ import entities.Usuario;
 import util.Validacoes;
 
 public class ControllerDAOUsuario {
+	
+	private static ControllerDAOUsuario controllerUsuario;
+	
+	private ControllerDAOUsuario() {
+	}
+	
+	public static synchronized ControllerDAOUsuario getInstace() {
+		if(controllerUsuario == null)
+			controllerUsuario = new ControllerDAOUsuario();
 
+		return controllerUsuario;
+	}
+	
 	// TODO: Build singleton the BD for Users
-	private List<Usuario> usuarios;
+	private List<Usuario> usuarios = new ArrayList<Usuario>();
 
 	private ControllerDAOEndereco contEndereco = new ControllerDAOEndereco();
 
 	private Validacoes validacao = new Validacoes();
-
-	public ControllerDAOUsuario() {
-		this.usuarios = new ArrayList<Usuario>();
-	}
 
 	// CRUD USUÁRIOS
 

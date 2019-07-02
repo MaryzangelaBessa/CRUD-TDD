@@ -38,7 +38,7 @@ public class Validacoes {
 	- (AK) É apenas letras */
 	public boolean ehTextoValido(String texto) throws Exception {
 		
-		Pattern padrao = Pattern.compile("^[a-zA-Z0-9][a-zA-Z0-9| ]*[a-zA-Z0-9]$");
+		Pattern padrao = Pattern.compile("^[a-zA-Z0-9][a-zA-Z0-9| ]*[a-zA-Z]$");
 		Matcher entrada = padrao.matcher(texto);
 		
 		if(entrada.matches()) return true;

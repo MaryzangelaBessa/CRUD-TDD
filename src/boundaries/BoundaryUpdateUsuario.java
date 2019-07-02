@@ -11,7 +11,7 @@ public class BoundaryUpdateUsuario {
 	public void menuUpdateUsuario() throws Exception {
 		boolean run = true;
 		scanner = new Scanner(System.in);
-		ControllerDAOUsuario contDAOUser = new ControllerDAOUsuario();
+		ControllerDAOUsuario contDAOUser = ControllerDAOUsuario.getInstace();
 		Validacoes validacao = new Validacoes();
 		
 		//contDAOUser.addUsuario("UsuarioTeste1", "RuaTeste1", "BairroTeste1", "CidadeTeste1", "EstadoTeste1", 123, "88996066716", 150.5);
