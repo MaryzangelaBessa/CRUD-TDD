@@ -1,8 +1,8 @@
-package testes.idInexistente;
+package testes.invalidos;
 
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
 
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 import controllersDAO.ControllerDAOUsuario;
 

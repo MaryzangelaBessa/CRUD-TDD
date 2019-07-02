@@ -14,8 +14,6 @@ public class BoundaryUpdateUsuario {
 		ControllerDAOUsuario contDAOUser = ControllerDAOUsuario.getInstace();
 		Validacoes validacao = new Validacoes();
 		
-		//contDAOUser.addUsuario("UsuarioTeste1", "RuaTeste1", "BairroTeste1", "CidadeTeste1", "EstadoTeste1", 123, "88996066716", 150.5);
-		
 		while (run) {
 			System.out.println("\n------Atualizar Usuário------");
 			System.out.println("Escolha o que deseja alterar:");
